@@ -12,10 +12,10 @@ class ImageLint_Parser {
     $output = '';
 
     foreach($html->find('img') as $element) {
-      $output .= $element->src . '<br>';
+      $element->src = self::getUrl($element->src);
     }
 
-    return $output;
+    return $html;
   }
 
   // Placeholder Method, this will be replaced by an external library
