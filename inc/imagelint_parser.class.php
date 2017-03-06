@@ -1,4 +1,5 @@
 <?php
+use voku\helper\HtmlDomParser;
 
 class ImageLint_Parser {
 
@@ -7,7 +8,14 @@ class ImageLint_Parser {
   }
 
   static function parseHandler($input) {
-    return htmlspecialchars($input);
+    $html = HtmlDomParser::str_get_html($input);
+    $output = '';
+
+    foreach($html->find('img') as $element) {
+      $output .= $element->src . '<br>';
+    }
+
+    return $output;
   }
 
   // Placeholder Method, this will be replaced by an external library

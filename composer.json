@@ -2,7 +2,7 @@
     "name": "imagelint/imagelint-wordpress",
     "description": "WordPress plugin for ImageLint",
     "require": {
-        "simple-html-dom/simple-html-dom": "^1.5"
+        "voku/simple_html_dom": "^2.0"
     },
     "authors": [
         {
