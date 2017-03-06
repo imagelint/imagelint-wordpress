@@ -1,0 +1,13 @@
+{
+    "name": "imagelint/imagelint-wordpress",
+    "description": "WordPress plugin for ImageLint",
+    "require": {
+        "simple-html-dom/simple-html-dom": "^1.5"
+    },
+    "authors": [
+        {
+            "name": "Sopamo GmbH",
+            "email": "hallo@sopamo.de"
+        }
+    ]
+}
