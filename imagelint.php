@@ -18,6 +18,6 @@ define('IMAGELINT_BASE', plugin_basename(__FILE__));
 require_once(IMAGELINT_DIR . '/inc/imagelint_parser.class.php');
 
 
-add_action('template_redirect', array('ImageLint_Parser', 'testfunc'));
+add_action('template_redirect', array('ImageLint_Parser', 'parseHook'));
 
 ?>
