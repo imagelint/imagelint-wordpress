@@ -29,9 +29,8 @@ class ImageLint_Parser {
     return 'url("' . self::getUrl($matches[1]) . '")';
   }
 
-  // Placeholder Method, this will be replaced by an external library
   static function getUrl($url) {
-    return base64_encode($url);
+    return Imagelint\Imagelint::get($url);
   }
 
 }

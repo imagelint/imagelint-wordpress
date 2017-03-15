@@ -4,9 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6eb20f6d3918d10d6097c019de901be3",
-    "content-hash": "a52cc2a5a19d9094ca2e7d995bfdfb77",
+    "hash": "0d678e1ce3c023c98912a9260ece89ee",
+    "content-hash": "2b69d9995d22ec107aa11c9a79aabb57",
     "packages": [
+        {
+            "name": "imagelint/imagelint-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/imagelint/imagelint-php.git",
+                "reference": "6eecd25204f76f29b8db843b2aa139e56acef750"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/imagelint/imagelint-php/zipball/6eecd25204f76f29b8db843b2aa139e56acef750",
+                "reference": "6eecd25204f76f29b8db843b2aa139e56acef750",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3 || ^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Imagelint\\": "src/Imagelint"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Mohr",
+                    "email": "p.mohr@sopamo.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "A class to convert your image URLs to Imagelint URLs",
+            "homepage": "https://github.com/imagelint/imagelint-php",
+            "keywords": [
+                "compression",
+                "image-compression",
+                "image-optimization",
+                "imagelint",
+                "speed"
+            ],
+            "time": "2017-03-10 17:06:02"
+        },
         {
             "name": "ircmaxell/password-compat",
             "version": "v1.0.4",
@@ -447,7 +495,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "imagelint/imagelint-php": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
