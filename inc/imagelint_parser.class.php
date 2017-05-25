@@ -10,7 +10,7 @@ class ImageLint_Parser {
   }
 
   static function parseHandler($input) {
-    return \Imagelint\HtmlParser::parse($input,'http://wordpress.dev',get_site_url());
+    return \Imagelint\HtmlParser::parse($input, get_site_url());
   }
 
   static function parseCSSUrl($matches) {
