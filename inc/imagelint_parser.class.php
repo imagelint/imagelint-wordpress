@@ -10,19 +10,7 @@ class ImageLint_Parser {
   }
 
   static function parseHandler($input) {
-    $html = HtmlDomParser::str_get_html($input);
-    $output = '';
-
-    foreach($html->find('img') as $element) {
-      $element->src = self::getUrl($element->src);
-    }
-
-    foreach($html->find('*[style]') as $element) {
-      $output = $element->style;
-      $element->style = preg_replace_callback(self::CSSURLREGEX, __CLASS__ . '::parseCSSUrl', $element->style);
-    }
-
-    return $html;
+    return \Imagelint\HtmlParser::parse($input,'http://wordpress.dev',get_site_url());
   }
 
   static function parseCSSUrl($matches) {

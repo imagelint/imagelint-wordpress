@@ -1,2 +1,4 @@
 /vendor/
 *.zip
+.idea
+.DS_Store
