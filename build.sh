@@ -1,1 +1,2 @@
-composer install && git archive -o imagelint.zip HEAD
+rm imagelint.zip
+composer install && zip -r imagelint.zip . -x "*.git*" "*.idea*"
